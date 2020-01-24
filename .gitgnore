@@ -1,0 +1,13 @@
+#�����ļ���
+node_modules/
+
+.gitignore
+
+#�����ļ�
+.zip
+.rar
+.mp3
+.mp4
+.apk
+.ipa
+.wt
