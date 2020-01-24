@@ -1,9 +1,7 @@
-#�����ļ���
 node_modules/
-
+express_static/node_modules
 .gitignore
 
-#�����ļ�
 .zip
 .rar
 .mp3
