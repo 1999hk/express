@@ -2,7 +2,7 @@
 🎈learning notes
 * 模块分类
     * require过程
-        <img alt="require过程" src="./img/模块加载过程.jpg">
+        <img alt="require过程" src="https://github.com/1999hk/nodejs/img/模块加载过程.jpg">
     * 内置模块
         > NodeJS自带，可直接使用
         * http，fs，url，path
