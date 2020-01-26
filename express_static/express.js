@@ -7,7 +7,29 @@ const app = express()
 
 // 静态资源服务器
 // 把当前目录作为静态资源服务器
-app.use(express.static('./'))
+// 1.内置中间件
+// const mw = express.static('./')
+// app.use(mw)
+
+// 2.自定义中间件
+app.use('/login', function (req, res, next) {
+    // req:request
+    // res:response
+    // next:进入下一个中间件的方法
+
+    res.send({ username: 'min', age: '18' })
+
+    // next()
+
+})
+
+app.use('/reg', function (req, res, next) {
+    // req:request
+    // res:response
+    // next:进入下一个中间件的方法
+
+    res.send('注册成功')
+})
 
 // 监听端口
 app.listen(1909, () => {

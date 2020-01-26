@@ -5,11 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>express手脚架</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <title>静态资源服务器</title>
 </head>
 
 <body>
+    <h2>大哥</h2>
+    <img src="../img/minge.jpg" alt="">
+    <script>
+        let xhr = new XMLHttpRequest();
 
+        xhr.onload = () => {
+            console.log(xhr.responseText)
+        }
+
+        xhr.open('post', 'http://localhost:1998/reg', true)
+
+        xhr.send()
+
+    </script>
 </body>
 
 </html>
