@@ -1,0 +1,14 @@
+{
+  "name": "restful",
+  "version": "1.0.0",
+  "description": "* RESTful（编写数据接口的标准）\r     * 根据不同的**请求类型**返回不同的数据接口\r     * 根据不同的**请求路径**返回不同的数据接口\r ```js",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "min",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

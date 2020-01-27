@@ -38,6 +38,16 @@
         * 使用中间件：`app.use([path],...middleware)`
         * 中间件分类
             * 内置中间件：express自带
+                * express.json
+                * express.static
+                ```js
+                // 把当前目录作为静态资源服务器
+                app.use(express.static('./'))
+                ```
+                * express.urlencoded
+                ```js
+                
+                ```
             * 第三方中间件：需要安装
             * 自定义中间件：自己编写的
 * 请求类型
@@ -49,7 +59,9 @@
 * [编写数据接口](https://github.com/1999hk/nodejs/RESTful)
     * RESTful：编写数据接口的标准
         * 根据**请求类型**来设计不同的数据接口
+            * get、post、pathc、delete、options...
         * 根据**请求路径**来设计不同的数据接口
+            * /login、/reg、...
 * 路由
     * 动态路由：路径带变量
 
