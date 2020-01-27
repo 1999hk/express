@@ -30,7 +30,7 @@
     * `npm install <modulename>`      安装模块
 * --save：安装模块到dependencies（默认）
 * --save-dev：安装模块到devDependencies
-* express
+* [express](https://github.com/1999hk/nodejs/server_static)
     * 中间件Middleware
         * 定义：中间件就是一个封装了某些处理数据功能的函数
         * 使用中间件：`app.use([path],...middleware)`
@@ -44,11 +44,10 @@
     * patch/put     改（putch:部分修改，put:全部修改）
     * delete        删
     * options       预请求（一般出现在跨域请求中，由浏览器自动发起）
-* 编写数据接口
+* [编写数据接口](https://github.com/1999hk/nodejs/RESTful)
     * RESTful：编写数据接口的标准
         * 根据**请求类型**来设计不同的数据接口
         * 根据**请求路径**来设计不同的数据接口
-    * [案例]()
 * 路由
     * 动态路由：路径带变量
 
