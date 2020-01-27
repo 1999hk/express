@@ -27,10 +27,12 @@
 * 命令
     * `npm init`                      初始化一个项目（生成一个package.json文件）
     * `npm install`                   安装所有依赖模块
-    * `npm install <modulename>`      安装模块
+    * `npm install <modulename>`      
 * --save：安装模块到dependencies（默认）
 * --save-dev：安装模块到devDependencies
-* [express](https://github.com/1999hk/nodejs/server_static)
+* 基于nodeJS内置模块
+    * [静态资源服务器](https://github.com/1999hk/nodejs/tree/master/server_static)
+* [express](https://github.com/1999hk/nodejs/tree/master/express_static)
     * 中间件Middleware
         * 定义：中间件就是一个封装了某些处理数据功能的函数
         * 使用中间件：`app.use([path],...middleware)`
