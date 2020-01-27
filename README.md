@@ -56,7 +56,7 @@
     * patch/put     改（putch:部分修改，put:全部修改）
     * delete        删
     * options       预请求（一般出现在跨域请求中，由浏览器自动发起）
-* [编写数据接口](https://github.com/1999hk/nodejs/RESTful)
+* [编写数据接口](https://github.com/1999hk/nodejs/tree/master/RESTful)
     * RESTful：编写数据接口的标准
         * 根据**请求类型**来设计不同的数据接口
             * get、post、pathc、delete、options...
