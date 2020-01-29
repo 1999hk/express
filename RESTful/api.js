@@ -13,6 +13,9 @@ const app = express()
 // 把当前目录作为静态资源服务器
 app.use(express.static('./'))
 
+// 利用中间件格式化前端传入的参数
+app.use(express.json(), express.urlencoded({ extended: false }))
+
 // 数据接口（路由）
 // 增加商品
 app.post('/goods', (req, res, next) => {

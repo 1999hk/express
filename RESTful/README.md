@@ -12,6 +12,7 @@
             * 注意：express没有把请求体中的数据格式化到req.body中，需要利用中间件实现格式化
             * express.json()
             * express.urlencoded({ extended: false })
-```js
-
-```
+            ```js
+            // 利用中间件格式化前端传入的参数
+            app.use(express.json(), express.urlencoded({ extended: false }))
+            ```
