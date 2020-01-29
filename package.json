@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "🎈learning notes\r * 模块分类\r     * require过程\r         <img alt=\"require过程\" src=\"https://github.com/1999hk/nodejs/blob/master/img/模块加载过程.jpg\">\r     * 内置模块\r         > NodeJS自带，可直接使用\r         * http，fs，url，path\r     * 第三方模块\r         > 别人写的符合commonJS规范的模块，需要安装`npm install xxx`，引入与内置模块一致\r         * express\r         * koa\r     * 自定义模块\r         > 自己编写的符合commonJS规范的的模块，引入时必须使用相对路径（`./`或者`../`）\r         * module.exports（优先级更高）\r         * exports\r     * 文件模块\r         * json文件\r         ```js\r         const config = require('./config.josn')     // 返回json内容\r         ```\r * cnpm替换npm\r     * 全局安装好cnpm\r     * `npm config get registry`     https://registry.npmjs.org/\r     * `npm config set registry=https://registy.npm.taobao.org/`    https://registy.npm.taobao.org/\r     * 替换完成后，你就直接可以使用`npm`了，从而它是使用淘宝镜像下载的\r * 命令\r     * `npm init`                      初始化一个项目（生成一个package.json文件）\r     * `npm install`                   安装所有依赖模块\r     * `npm install <modulename>`      \r * --save：安装模块到dependencies（默认）\r * --save-dev：安装模块到devDependencies\r * 基于nodeJS内置模块\r     * [静态资源服务器](https://github.com/1999hk/nodejs/tree/master/server_static)\r * [express](https://github.com/1999hk/nodejs/tree/master/express_static)\r     * 中间件Middleware\r         * 定义：中间件就是一个封装了某些处理数据功能的函数\r         * 使用中间件：`app.use([path],...middleware)`\r         * 中间件分类\r             * 内置中间件：express自带\r                 * express.json\r                 ```js\r                 // 如果Content-type为application/json\r                 // 则利用中间件express.json把请求体中的数据格式化到req.body中\r                 // 修改商品\r                 app.patch('/goods/:id', express.json(), (req, res, next) => {\r                     // post, patch, put等请求（参数放在请求体中）\r                     // 接收前端传入的参数\r                     console.log(req.body)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1999hk/nodejs.git"
+  },
+  "author": "min",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1999hk/nodejs/issues"
+  },
+  "homepage": "https://github.com/1999hk/nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

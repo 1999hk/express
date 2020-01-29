@@ -1,6 +1,4 @@
 node_modules/
-express_static/node_modules
-RESTful/node_modules
 .gitignore
 
 .zip
