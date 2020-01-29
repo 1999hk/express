@@ -9,7 +9,9 @@
         * 获取参数：req.query
     * post, patch, put等请求参数放在请求体中
         * 获取参数：req.body
-        * 注意：express没有把请求体中的数据格式化到req.body中，需要利用中间件实现格式化
+            * 注意：express没有把请求体中的数据格式化到req.body中，需要利用中间件实现格式化
+            * express.json()
+            * express.urlencoded({ extended: false })
 ```js
 
 ```
