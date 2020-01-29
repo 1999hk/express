@@ -39,6 +39,19 @@
         * 中间件分类
             * 内置中间件：express自带
                 * express.json
+                ```js
+                // 如果Content-type为application/json
+                // 则利用中间件express.json把请求体中的数据格式化到req.body中
+                // 修改商品
+                app.patch('/goods/:id', express.json(), (req, res, next) => {
+                    // post, patch, put等请求（参数放在请求体中）
+                    // 接收前端传入的参数
+                    console.log(req.body)
+                    
+                    res.send(req.body)
+
+                })
+                ```
                 * express.static
                 ```js
                 // 把当前目录作为静态资源服务器
@@ -46,8 +59,19 @@
                 ```
                 * express.urlencoded
                 ```js
-                
+                // 如果Content-type为application/x-www-form-urlencoded
+                // 则利用中间件express.urlencode把请求体中的数据格式化到req.body中
+                // 修改商品
+                app.patch('/goods/:id', express.urlencoded(), (req, res, next) => {
+                    // post, patch, put等请求（参数放在请求体中）
+                    // 接收前端传入的参数
+                    console.log(req.body)
+
+                    res.send(req.body)
+
+                })
                 ```
+                * express.Router
             * 第三方中间件：需要安装
             * 自定义中间件：自己编写的
 * 请求类型
